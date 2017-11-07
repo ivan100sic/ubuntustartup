@@ -5,7 +5,7 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # Set mouse accelaration
-for i in {1..16}
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 do
  xinput --set-prop $i 'Device Accel Profile' -1
 done;
