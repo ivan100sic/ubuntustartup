@@ -7,6 +7,7 @@ fi
 # Run common.sh
 
 wget https://raw.githubusercontent.com/ivan100sic/ubuntustartup/master/common.sh
+chmod +x common.sh
 ./common.sh
 
 # Install some database tools
