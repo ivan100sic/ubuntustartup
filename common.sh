@@ -29,7 +29,7 @@ apt-get update
 sudo apt-get install sublime-text
 
 # Install various utilities
-apt-get install curl
+apt-get install curl git
 
 
 
