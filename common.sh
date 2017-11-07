@@ -13,10 +13,10 @@ done;
 # Set up visuals
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 4
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 4
-wget https://i.ytimg.com/vi/sJQy7inDgUE/maxresdefault.jpg -O zid.jpg
-chmod 666 zid.jpg
+wget https://i.ytimg.com/vi/sJQy7inDgUE/maxresdefault.jpg -O zid.jpg && \
+chmod 666 zid.jpg && \
+chown ubuntu zid.jpg && \
 gsettings set org.gnome.desktop.background picture-uri 'file:///home/ubuntu/zid.jpg'
-# gsettings set org.gnome.desktop.interface clock-show-seconds true
 
 
 # Update apt
