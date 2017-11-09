@@ -11,6 +11,16 @@ bash common.sh
 
 # Install some database tools
 
-sudo apt-get install mysql-server
-sudo apt-get install php7*
+sudo apt-get -y install mysql-server
+
+sudo apt-get -y install php7.0-cli
+sudo apt-get -y install php7.0-common
+sudo apt-get -y install php7.0-json
+sudo apt-get -y install php7.0-mbstring
+sudo apt-get -y install php7.0-mysql
+sudo apt-get -y install php7.0-readline
+sudo apt-get -y install php7.0-sqlite
+sudo apt-get -y install php7.0-xml
+
+sudo apt-get -y install php-xdebug
 
