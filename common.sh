@@ -16,10 +16,15 @@ gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 4
 wget https://i.ytimg.com/vi/sJQy7inDgUE/maxresdefault.jpg -O zid.jpg && \
 gsettings set org.gnome.desktop.background picture-uri 'file:///home/ubuntu/zid.jpg'
 
-gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-columns 100
-gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-rows 50
-gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ use-transparent-background true
-gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ use-theme-colors false
+prof=$(gsettings get org.gnome.Terminal.ProfilesList default)
+prof=${prof:1:-1}
+termstr="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"
+gsettings set "$termstr$prof/" default-size-columns 100
+gsettings set "$termstr$prof/" default-size-rows 50
+gsettings set "$termstr$prof/" use-transparent-background true
+gsettings set "$termstr$prof/" use-theme-colors false
+gsettings set "$termstr$prof/" foreground-color '#FFFFFF'
+gsettings set "$termstr$prof/" background-transparency-percent 25
 
 gsettings set com.canonical.Unity integrated-menus true
 
