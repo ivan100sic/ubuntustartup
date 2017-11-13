@@ -27,6 +27,7 @@ gsettings set "$termstr$prof/" foreground-color '#FFFFFF'
 gsettings set "$termstr$prof/" background-transparency-percent 25
 
 gsettings set com.canonical.Unity integrated-menus true
+dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1
 
 # Update apt
 sudo apt-get -y update
