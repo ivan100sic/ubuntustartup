@@ -21,6 +21,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-rows 50
 gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ use-transparent-background true
 gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ use-theme-colors false
 
+gsettings set com.canonical.Unity integrated-menus false
+
 # Update apt
 sudo apt-get -y update
 sudo apt-get -y install apt-transport-https
