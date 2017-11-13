@@ -10,3 +10,6 @@ wget https://raw.githubusercontent.com/ivan100sic/ubuntustartup/master/common.sh
 bash common.sh
 
 # Install monodevelop
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get -y install monodevelop
