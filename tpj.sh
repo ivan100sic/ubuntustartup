@@ -13,3 +13,13 @@ bash common.sh
 sudo add-apt-repository universe
 sudo apt-get update
 sudo apt-get -y install monodevelop
+
+# Install VNC
+lnk='https://www.realvnc.com/en/connect/download/viewer/linux'
+fn=$(wget $lnk/ -O -| grep -o '\".*x64\.deb')
+fn=${fn:2}
+pn=VNC-Linux-x64.deb
+l2=https://www.realvnc.com/$fn
+wget $l2 -O $pn
+sudo dpkg -i $pn
+rm $pn
