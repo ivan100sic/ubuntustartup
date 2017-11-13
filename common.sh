@@ -16,6 +16,11 @@ gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 4
 wget https://i.ytimg.com/vi/sJQy7inDgUE/maxresdefault.jpg -O zid.jpg && \
 gsettings set org.gnome.desktop.background picture-uri 'file:///home/ubuntu/zid.jpg'
 
+gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-columns 100
+gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-rows 50
+gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ use-transparent-background true
+gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ use-theme-colors false
+
 # Update apt
 sudo apt-get -y update
 sudo apt-get -y install apt-transport-https
