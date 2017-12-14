@@ -44,6 +44,9 @@ sudo apt-get -y install sublime-text
 
 # Install various utilities
 sudo apt-get -y install curl git
+git config --global user.email "ivan100sic@gmail.com"
+git config --global user.name "Ivan Stosic"
+
 
 
 
