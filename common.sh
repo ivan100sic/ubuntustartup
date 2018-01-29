@@ -47,6 +47,12 @@ sudo apt-get -y install curl git
 git config --global user.email "ivan100sic@gmail.com"
 git config --global user.name "Ivan Stosic"
 
+# Set up sublime by cloning the competelib repo
+git clone https://github.com/ivan100sic/competelib
+cp -r ./competelib/* ~/.config/sublime-text-3/Packages
+rm -rf ./competelib
+
+
 
 
 
