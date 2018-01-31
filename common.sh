@@ -48,6 +48,7 @@ git config --global user.email "ivan100sic@gmail.com"
 git config --global user.name "Ivan Stosic"
 
 # Set up sublime by cloning the competelib repo
+mkdir ~/.config/sublime-text-3
 mkdir ~/.config/sublime-text-3/Packages
 git clone https://github.com/ivan100sic/competelib
 cp -r ./competelib/* ~/.config/sublime-text-3/Packages
