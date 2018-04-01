@@ -52,4 +52,5 @@ mkdir ~/.config/sublime-text-3
 mkdir ~/.config/sublime-text-3/Packages
 git clone https://github.com/ivan100sic/competelib
 cp -r ./competelib/* ~/.config/sublime-text-3/Packages
+cp -r ./competelib/.git ~/.config/sublime-text-3/Packages
 rm -rf ./competelib
