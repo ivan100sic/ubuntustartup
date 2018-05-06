@@ -13,5 +13,5 @@ fi
 mkdir objdir
 cd objdir
 ../configure --disable-multilib
-make -j 32
+make CFLAGS='-O2' LIBCFLAGS='-g -O2' LIBCXXFLAGS='-g -O2 -fno-implicit-templates' bootstrap -j 32
 make install
